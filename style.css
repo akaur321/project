@@ -1,0 +1,228 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* css variables*/
+:root{
+    --navbar-height:60px;
+}
+
+/*navigation bar*/
+#navbar{
+    display:flex;
+    align-items:center;
+    position:relative;
+    top:0;
+    
+}
+
+#navbar::before{
+    background-color:black;
+    content:"";
+    height:100%;
+    width:100%;
+    position:absolute; 
+    z-index:-1;
+    opacity:0.4;
+    
+
+}
+
+/*logo and image*/
+/* #logo{
+
+} */
+#logo img{
+    height:80px;
+    width:80px;
+    margin:15px 25px;
+}
+
+#navbar ul{
+    display:flex;
+   justify-content: center;
+   
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+   }
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 24px;
+    border-radius: 20px;
+    text-decoration:none;
+}
+
+#navbar ul li a:hover{
+    background-color: white;
+    color:black;
+
+  
+}
+
+/* Home section */
+#home{
+    display:flex;
+    color:white;
+    flex-direction:column;
+    align-items: center;
+    height:555px;
+    justify-content: center;
+}
+
+#home::before{
+    background-image: url('bg1.jpg');
+    content:"";
+    height:100%;
+    width:100%;
+    position:absolute; 
+    z-index:-1;
+}
+#home h2{
+    font-size:50px;
+    text-align:center;
+    padding:80px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#home p{
+    text-align:center;
+    padding:5px;
+    font-size: 25px ;
+    font-family:'Sofia';
+}
+
+/*services section*/
+#services{
+    display:flex;
+    margin:34px;
+    
+}
+
+#services .box{
+    border:4px solid brown;
+    background-color: rgb(219, 142, 47);
+    border-radius: 30px;
+    margin:5px 20px;
+    padding:30px;
+
+}
+
+#services .box img{
+    height:120px;
+    margin:auto;
+    display:block;
+
+}
+#services .box p{
+    font-family:'Sofia';
+}
+
+/*clients-section*/
+#clients-section .client-item img{
+    height: 100px;
+    width:100px;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding:34px;
+}
+#clients-section{
+    
+    position:relative;
+}
+#clients-section::before{
+    background-image: url('dish2.jpg');
+    background-size: cover;
+    content:"";
+    height:100%;
+    width:100%;
+    position:absolute; 
+    z-index:-1;
+    opacity:0.3;
+}
+/*contact section*/
+
+#contact-section{
+    position:relative;
+}
+#contact-section::before{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background:url('contactmcd.jpg') no-repeat center center/cover;
+   
+
+}
+
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-bottom: 30px;
+}
+
+ #contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:3px;
+    border-radius: 10px;
+    font-size:1rem;
+
+} 
+#contact-box form{
+    width:40%;
+   
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+footer{
+    background-color: black;
+    color:white;
+}
+
+
+/* utility class */
+.h-primary{
+    font-size:3.8rem;
+    padding:12px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding:12px;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+
+.btn{
+    background-color: brown;
+    border:2px solid black;
+    padding:6px 20px;
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align:center;
+}
